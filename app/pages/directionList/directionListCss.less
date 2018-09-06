@@ -1,0 +1,199 @@
+@import '../../style/theme.less';
+.recordList-contain{
+    width: 96%;
+    height: 84vh;
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+    border:@border-base;
+    .appoint-content-active{
+        display: block;
+    }
+    .appoint-content-noActive{
+        display: none;
+    }
+    .instationScroll{  
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+    }
+    .instationScroll::-webkit-scrollbar{ width: 20px; height: 20px;}
+}
+.recordList-height{ height: 97%; }
+.showIdCard{
+    color: red!important;
+    font-size: 0.875rem;
+}
+.reportShow{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 34;
+    background-color: rgba(0, 0, 0, 0);
+
+    .reporList-miji{
+        text-align: left;
+    }
+    div{
+        width: 60%;
+        height: 73%;
+        position: absolute;
+        top: 19%;
+        left: 20%;
+        overflow: scroll;
+        padding: 2rem;
+        background-color: white;
+        z-index: 100;
+        border: @border-base;
+        border-radius: 10px;
+
+        b{
+            display: block;
+            position: absolute;
+            top:1rem;
+            right:1rem;
+            width:1.5rem;
+            height:1.5rem;
+            background-image:url('../../images/analysis/closeZhipai.png');
+            background-size:100% 100%;
+            cursor:pointer;
+        }
+    }
+
+
+}
+
+.direction-table{
+    width: 100%;
+    margin-top: 2rem;
+    table{
+        border-collapse: collapse;
+        //table-layout: fixed;
+        width:100%;
+        thead{
+            background-color: #2c567f;
+            th{
+                background-color: #2c567f;
+                color: white;
+                font-size: 1.25rem;
+                font-weight: 400;
+                height: 3.5rem;
+                text-align: center;
+            }
+        }
+        tbody{
+            tr td{
+                font-size: 1.25rem;
+                color: rgba(0, 0, 0, 0.647);
+                font-weight: 400;
+                border-bottom: 1px solid #e8e8e8;
+                height: 3.5rem;
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+
+
+.peizhi-contain{
+    width: 100%;
+    height: 63vh;
+    overflow: scroll;
+    .peizhi-show{
+        width: 100%;
+        padding: 1rem;
+        background-image:url('../../images/common/shaixuan-back.png');
+        background-size: 100% 100%;
+        overflow: hidden;
+        p{
+            font-size: 1.25rem;
+            color: #2C567F;
+        }
+        table{
+            border: none;
+            width: 100%;
+            // margin:1rem 0;
+            table-layout: fixed;
+            // td:nth-child(odd){
+            //     width: 20%;
+            // }
+            tr td{
+                height: 3rem;
+                font-size: 1.125rem;
+                color: #666;
+                text-align: left;
+            }
+        }
+    }
+    .peizhi-select{
+        width: 100%;
+        margin-top: 1rem;
+        table{
+            width: 100%;
+            border:none;
+            table-layout: fixed;
+            tr{
+                height: 7rem;
+            }
+            td{
+                font-size: 1.125rem;
+                height: 3rem;
+                .ant-select{
+                    width: 90%!important;
+                }
+                button{
+                    float: right;
+                }
+            }
+            // td:nth-child(odd){
+            //     width: 35%;
+            // }
+            // td:nth-child(even){
+            //     width: 65%;
+            // }
+        }
+    }
+}
+
+.whiteSheetBtn{
+    margin-left: 3rem;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 0.4rem 3rem;
+    color: #2c567f;
+    border: 1px solid #2c567f;
+    background-color: white;
+    font-size: 1.125rem;
+    outline: none;
+    float: right;
+}
+
+.feedback-p{
+    font-size: 1.25rem;
+    color: #2C567F;
+    line-height: 2rem;
+    margin-top: 1rem;
+}
+
+.guanZhuDiQu{
+    width: 100%;
+    min-height: 26vh;
+    p{
+        float: left;
+        font-size:1.125rem;
+    }
+    div{
+        float: left;
+        overflow: scroll;
+        max-height: 30vh;
+        margin-top: -0.5rem;
+        ul{
+            font-size: 1rem;
+        }
+    }
+}

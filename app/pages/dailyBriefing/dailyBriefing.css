@@ -1,0 +1,271 @@
+#dailyBriefing .briefing {
+  width: 100%;
+  height: 40vw;
+  background: #00162a;
+  padding: 0.5% 0;
+}
+.fl {
+  float: left;
+}
+.briefing-left .title,
+.briefing-right .title,
+.yujingrenyuan .title {
+  width: 100%;
+  height: 7%;
+  color: #489cef;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.yujingrenyuan .table-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.briefing-left {
+  margin: 0 0.25%;
+  width: 70%;
+  height: 100%;
+  float: left;
+  background-image: url("../../images/daily/briefing-left.png");
+  background-size: 100% 100%;
+}
+.briefing-left > div {
+  width: 100%;
+  height: 46%;
+}
+.briefing-left-chart {
+  width: 44%;
+  height: 100%;
+}
+.briefing-left-panel {
+  width: 12%;
+  height: 100%;
+  font-size: 1.1rem;
+}
+.chart-title {
+  padding-left: 2%;
+  text-align: left;
+  height: 10%;
+  font-size: 1.2rem;
+  color: #78d6ea;
+}
+.chart-title > img {
+  vertical-align: middle;
+  padding-left: 2%;
+}
+.chart-box {
+  width: 100%;
+  height: 90%;
+}
+.briefing-left-panel {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.briefing-left-panel > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  background-image: url("../../images/daily/chart-panel.png");
+  background-size: 100% 100%;
+}
+.briefing-left-panel > div:nth-child(1) {
+  flex-direction: column;
+  background-image: url("../../images/daily/chart-panel-top.png");
+}
+.briefing-left-panel > div:nth-child(2) > div,
+.briefing-left-panel > div:nth-child(3) > div {
+  height: 60%;
+  width: 100%;
+  text-align: center;
+}
+.briefing-left-panel img {
+  height: 40%;
+  margin-bottom: -0.1rem;
+}
+.chart-panel-num {
+  font-size: 1.1rem;
+}
+.briefing-right {
+  margin: 0 0.25%;
+  width: 29%;
+  height: 100%;
+  float: left;
+  background-image: url("../../images/daily/briefing-right.png");
+  background-size: 100% 100%;
+}
+.briefing-right-chart {
+  width: 100%;
+  height: 47%;
+}
+.yujingrenyuan {
+  padding: 0.5% 0;
+  height: 20vw;
+  width: 100%;
+  background: #00162a;
+}
+.yujingrenyuan > div {
+  display: flex;
+  justify-content: space-around;
+  width: 99.5%;
+  height: 100%;
+  margin: 0 0.25%;
+  background-image: url("../../images/daily/briefing-table.png");
+  background-size: 100% 100%;
+}
+.yujingrenyuan .table-title {
+  height: 12%;
+  color: #489cef;
+  font-size: 1.2rem;
+}
+.yujingrenyuan .tables {
+  width: 48%;
+  height: 100%;
+}
+.yujingrenyuan .tables > table {
+  color:white;
+  width: 100%;
+  height: 86%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+.yujingrenyuan .tables > table th {
+  font-weight: 300;
+}
+.yujingrenyuan .tables > table td,
+th {
+  border: 1px solid #0f2d49;
+}
+.dataTables-box1 {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.dataTables-box1::-webkit-scrollbar {
+  color: black;
+}
+.dataTables-box1 table {
+  width: 100%;
+  text-align: center;
+  /*table-layout: fixed;*/
+}
+.dataTables-box1 table thead {
+  width: 100%;
+}
+.dataTables-box1 table tr {
+  line-height: 20px;
+}
+.dataTables-box1 th:nth-child(1) {
+  width: 9%;
+}
+.dataTables-box1 th:nth-child(3) {
+  width: 12%;
+}
+.dataTables-box1 th:nth-child(5) {
+  width: 7%;
+}
+.dataTables-box1 th:nth-child(4) {
+  width: 16%;
+}
+.dataTables-box1 th:nth-child(2) {
+  width: 25%;
+}
+.dataTables-box1 th:nth-child(6) {
+  width: 20%;
+}
+.dataTables-box1 tbody td:nth-child(1) {
+  width: 10%;
+}
+.dataTables-box1 tbody td:nth-child(3) {
+  width: 12%;
+}
+.dataTables-box1 tbody td:nth-child(5) {
+  width: 7%;
+}
+.dataTables-box1 tbody td:nth-child(4) {
+  width: 16%;
+}
+.dataTables-box1 tbody td:nth-child(2) {
+  width: 24%;
+}
+.dataTables-box1 tbody td:nth-child(6) {
+  width: 30%;
+}
+.dataTables-box1 tbody td:nth-child(6) div {
+  width: 100%;
+  line-height: 1rem;
+  height: 1rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dataTables-box1 tbody td:nth-child(6) div a {
+  color: #fff;
+}
+.imgLine {
+  margin-bottom: 0;
+}
+.dataTables-box1 tbody td:nth-child(4) div {
+  width: 100%;
+  line-height: 1rem;
+  height: 1rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dataTables-box1 tbody td:nth-child(2) div {
+  width: 100%;
+  line-height: 1rem;
+  height: 1rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dataTables-box1 tbody td:nth-child(4) div a {
+  color: #fff;
+}
+.dataTables-box1 tbody td:nth-child(2) div a {
+  color: #fff;
+}
+.dataTables-box1 tbody td:nth-child(1) div {
+  width: 100%;
+  line-height: 1rem;
+  height: 1rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dataTables-box1 tbody td:nth-child(3) div {
+  width: 100%;
+  line-height: 1rem;
+  height: 1rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dataTables-box1 tbody td:nth-child(5) div {
+  width: 100%;
+  line-height: 1rem;
+  height: 1rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dataTables-box1 tbody td:nth-child(1) div a {
+  color: #fff;
+}
+.dataTables-box1 tbody td:nth-child(3) div a {
+  color: #fff;
+}
+.dataTables-box1 tbody td:nth-child(5) div a {
+  color: #fff;
+}

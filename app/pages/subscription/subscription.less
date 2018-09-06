@@ -1,0 +1,253 @@
+
+.subscription-contain{ 
+    width: 100%;
+    height: 88vh;
+    position: absolute;
+    left: 0;
+    padding: 4rem 2rem;
+    background-color: #001629;
+
+
+    .subscription-contain .subscription-content{ height:86%; width: 99%; margin: 1% auto}
+
+    .subscription-contain .ant-checkbox-wrapper + .ant-checkbox-wrapper{ margin:0!important; }
+    .subscription-contain .ant-radio-wrapper{ margin:0!important;}
+    .ant-steps-item-wait > .ant-steps-item-content > .ant-steps-item-title{ color: white;}
+    .ant-steps-item-process > .ant-steps-item-content > .ant-steps-item-title{ color: #1890ff }
+
+    .row{
+        margin-right: -15px;
+        width:99.9%;
+        height:97%;
+        margin-top:1%;
+        margin-left:0.1%;
+    }
+    .rowType{
+        width: 30%;
+        height:73vh;
+        float:left;
+        margin:0 1.5rem;
+    }
+    .rowKind{
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .steps-content {
+        margin-top: 16px;
+        min-height: 30rem;
+    }
+    .steps-action {
+        position:fixed;
+        right:1%;
+        bottom:2%;
+    }
+    .ant-radio-group{ width:100%; }
+    .list-group-item{
+        color:white;
+        border:1px solid #4884a8;
+        position:relative;
+        font-size: 1rem;
+        margin: 0;
+        /*padding-left: 40px;*/
+        display: block;
+        padding: 0.6rem 1rem;
+        margin-bottom: -1px;
+    }
+    .list-group-item>a:hover{ color:white!important; text-decoration: none}
+    .list-group-item .active{
+        background-color:#02182f;
+    }
+    .list-group-item:first-child {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+    .list-group-item:last-child {
+        margin-bottom: 0;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+    .scrollHeight .list-group-item{
+        color:white;
+        background-color:#031e3b;
+        border:1px solid #4884a8;
+        position:relative;
+    }
+    .list-group-item .fa{
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        background:url(../../images/newsCenter/flag.png) no-repeat  ;
+        position:absolute;
+        top:1rem;
+        left:2rem;
+    
+    }
+    .list-group-item .edit{
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        background:url(../../images/newsCenter/edit.png) no-repeat  ;
+        position:absolute;
+        top:1rem;
+        left:2rem;
+        opacity: 1;
+    
+    }
+    .list-group-item .editAfter{
+        opacity: 1;
+    }
+    .table{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .table tr td{
+        padding: 8px;
+        line-height: 1.42857143;
+        vertical-align: top;
+        /*border-top: 1px solid #ddd;*/
+    }
+     .checkbox-inline {
+        position: relative;
+        display: inline-block;
+        padding-left: 20px;
+         color:white;
+        margin-bottom: 0;
+        font-weight: normal;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+     .checkbox-inline input{
+         position: absolute;
+         /*margin-top: 4px \9;*/
+         /*margin-left: -20px;*/
+         /*margin: 4px 0 0;*/
+         /*margin-top: 1px \9;*/
+         line-height: normal;
+         margin:0.25rem 0 0 -1.25rem;
+     }
+    #sj .city{
+        color:white;
+        background-color:#031e3b;
+        border:1px solid #4884a8;
+    }
+    .scrollHeight .list-group-item:hover, button.list-group-item:hover, a.list-group-item:focus, button.list-group-item:focus,#sj .city:hover {
+        color: white;
+        text-decoration: none;
+        background-color: #2866ab;
+    }
+    .ant-checkbox-wrapper,.ant-checkbox-wrapper,.checkbox-inline,.step-pane>.table tr td{ font-size:0.875rem!important;}
+    .ant-checkbox-wrapper + span, .ant-checkbox + span{ font-size:1rem!important;}
+    .ant-steps .ant-steps-step  .ant-steps-head{
+         background: #031e3b;
+    }
+    .ant-steps .ant-steps-main .ant-steps-title{
+        background: #031e3b;
+    
+    }
+    .ant-steps .ant-steps-item.ant-steps-status-wait  .ant-steps-step .ant-steps-main .ant-steps-title {
+       color:white;
+    }
+    .ant-steps .ant-steps-item.ant-steps-status-process   .ant-steps-main .ant-steps-title {
+        color:white;
+    }
+    .ant-steps .ant-steps-item.ant-steps-status-finish  .ant-steps-main .ant-steps-title {
+        color: rgb(085,85,85);
+    }
+    .no-border.table > thead > tr > th, .no-border.table > tbody > tr > th, .no-border.table > tfoot > tr > th, .no-border.table > thead > tr > td, .no-border.table > tbody > tr > td, .no-border.table > tfoot > tr > td {
+        border:none;
+    }
+    #btn1,#btn3,#btn2{
+        /*padding: 0.5vw 1vw;*/
+        border: 1px solid #0c2a46;
+        border-radius: 4px;
+        color: white;
+        margin-left: 1vw;
+    
+    }
+    #btn:hover{
+        background-color: #2866ab;
+        cursor: pointer;
+    }
+    
+    .notice-success,.notice-warning{
+        width: 100%;
+        height: 100%;
+        z-index:100;
+        position:absolute;
+        top:0;
+        left:0;
+        background-color: rgba(85,85,85,0.5);
+        display:none;
+    }
+    .book-success,.book-warning{
+        background-color:white;
+        width: 10%;
+        height:15%;
+        position:absolute;
+        top:4%;
+        left:40%;
+        border-radius:4px;
+    }
+    .book-success p,.book-warning p{
+        font-size:1.2rem;
+        font-weight:bold;
+        text-align:center;
+        margin-top:20%;
+    }
+    .book-success p{
+        color:#2866ab;
+    }
+    .book-warning p{
+        color:red;
+    }
+    .book-success Button,.book-warning Button{
+        margin-left:4rem;
+        margin-bottom:2rem;
+    }
+    
+    /*提示框样式*/
+    .ant-modal-content,.ant-btn:hover,.ant-btn, .ant-btn:focus, .ant-btn:active, .ant-btn.active{ background-color:#1b4c79!important; }
+    .ant-confirm-warning .ant-confirm-body > .anticon, .ant-confirm-confirm .ant-confirm-body > .anticon{
+        color: #49a9ee!important;
+    }
+    .ant-confirm-body .ant-confirm-title{ color:white!important; }
+    .ant-confirm-body .ant-confirm-content{ color:white!important;}
+    .ant-btn-primary{ background-color:#082948; }
+    .ant-btn-primary:active, .ant-btn-primary.active,.ant-btn-primary:hover, .ant-btn-primary:focus{ background:transparent;}
+    
+    /*.ant-btn > i, .ant-btn > span{ color:black!important;}*/
+    
+    /* 设置滚动条的样式 */
+    .scrollHeight::-webkit-scrollbar {
+        width: 12px;
+    }
+    /* 滚动槽 */
+    .scrollHeight::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 3px;
+    }
+    /* 滚动条滑块 */
+    .scrollHeight::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: rgba(51,122,183,0.5);
+        /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);*/
+    }/*
+    .scrollHeight::-webkit-scrollbar-thumb:window-inactive {
+        background: rgba(255,0,0,0.4);}*/
+
+    .ant-checkbox-group{
+        width:100%;
+    }
+    .ant-checkbox-wrapper{
+        color:white;
+    }
+    .table.no-border{
+        color:white;
+    }
+    .ant-steps-item-finish > .ant-steps-item-content > .ant-steps-item-title{
+        color:white;
+    }
+}

@@ -1,0 +1,293 @@
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.container-fluid{
+    position: relative;
+    overflow-x: hidden;background-color: #031E3B;
+    height: 88vh;
+
+// .container-fluid{
+    .text-center {
+        height: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header {
+        margin: auto;
+        height: auto;
+    }
+    
+    .header-img {
+        width: auto;
+        height: 100%;
+    }
+    
+    .header-title {
+        color: white;
+        font-size: 1.3rem;
+        line-height: 2.4rem;
+    }
+    
+    .home {
+        color: white;
+        /* font-size: 1rem;*/
+        font-size: 1em;
+        cursor: pointer;
+        border: 1px solid #45617C;
+        border-radius: 3px;
+        padding: 2px;
+        height: 85%;
+        vertical-align: bottom;
+        position: absolute;
+        top: 2px;
+        right: 10px;
+    }
+    
+    .home-img {
+        width: auto;
+        height: 100%;
+        vertical-align: bottom;
+    }
+    
+    .home-bt{
+        position: absolute;
+        right: 2%;
+        top: 1%;
+        color: #c4e3ff;
+        border: 1px solid #c4e3ff;
+        border-radius: 0.3rem;
+        padding: 0.2rem 0.6rem;
+        z-index: 2;
+        cursor: Pointer;
+        display: none;
+    
+    }
+    .home-bt>img{width: 1.6rem;}
+    .home-bt>span{vertical-align: middle;}
+    
+    .all_echart{
+        height: 89%;
+        width: 100%;
+        display: flex;
+    }
+    .all_echart>div{
+        height: 100%;
+        width:33%;;
+    }
+    .all_echart>.middle{
+        position:relative;
+    }
+    .chart_box {
+        width: 49%;
+        float: left;
+        height: 32.5%;
+        border: none;
+        background-image: url("../../images/stateAnalysis/echat-bg.png");
+        background-size: 100% 100%;
+        margin: 0.5%;
+    }
+    .chart_box > div {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .center-panel {
+        z-index: 7;
+        //position: absolute;
+        position: relative;
+        //left:1.5rem;
+        //top:1.5rem;
+        clear: both;
+        margin: 1.5rem 1.5rem 0 1.5rem;
+        padding: 1rem;
+        background: url("../../images/stateAnalysis/bg-warning.png") no-repeat ;
+        background-size:100% 100%;
+        height:9%;
+        font-size:1rem;
+    }
+    
+    .center-info {
+        display: table-cell;
+        color: #f5f687;
+    }
+    /*.center-info>marquee{height: 3rem;}*/
+    
+    .all_radio_group{
+        width: 100%; align-items: center;padding: 1.5rem; position: relative; z-index: 6;}
+    /*ul.all_radio_group>ul {}*/
+    .all_radio_group>li {float:left;list-style: none; font-size: 0.8rem; margin: 0.2% 1%;white-space: nowrap; cursor: pointer;}
+    /*ul.all_radio_group>li>span {margin-left: 0.5rem;padding-left: 1rem;color: #74a4d4; background: url("../../img/dyShow/radio.png") no-repeat left;}*/
+    /*ul.all_radio_group>li.active>span {margin-left: 0.5rem;padding-left: 1rem;color: #ffffff; background: url("../../img/dyShow/radio-active.png") no-repeat left;}*/
+    .map-legend{width: 100%;height: 20%;display: flex;justify-content: space-between;}
+    
+    
+    .chart-map {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .chart-singleMap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .chart-bingdianMap{border: 1px solid #ddf9fd; width: 29%; height: 20%;position: absolute;bottom: 0;right: 0;z-index: 9; display: none}
+    .chart-bingdianMap .bingdian-title{background-color: #ddf9fd; color: #232323;display: inline-block;padding: 1% 4%;position: absolute; z-index: 6;}
+    .chart-bingdianMap .main-chart{width: 100%; height: 100%;}
+    
+    
+    .center-img {
+        padding: 10px 0 0 10px;
+        display: table-cell;
+    }
+    
+    .center-img img {
+        cursor: pointer;
+    }
+    .center-content{
+        list-style: none;
+        position: absolute;
+        background-color: rgba(3,30,59,0.8);
+        width: 90%;
+        padding: 0.5rem;
+    }
+    .center-content li{
+        color: yellow;
+    }
+    
+    .chartPanel {
+        position: fixed;
+        background-color: #041f3b;
+        width: 75%;
+        height: 75%;
+        top: 12%;
+        left: 12%;
+        margin: 0;
+        z-index: 1000;
+        border: none;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    }
+    
+    #closeChartPanel {
+        color: white;
+        font-size: 2em;
+    }
+    
+    
+    li a.active {
+        color: yellow;
+    
+    }
+    
+    li a.active:before {
+        background-color: yellow;
+    }
+    
+    /*重大警情预警样式*/
+    /*.middle .center-panel*/
+    
+    /*.middle .center-panel{
+        height:13%;
+        width:93%;
+        margin:0 auto;
+        !*overflow:hidden;*!
+        !*border:1px solid #fff;*!
+        position:relative;
+        !*background:url(../../assets/image/bg-warning.png) no-repeat;*!
+        !*background-size:cover;*!
+    }*/
+    .middle .center-panel .center-img{
+        position:absolute;
+        top:30%;
+        right:5%;
+        cursor:pointer;
+    }
+    .middle .center-panel .scroll{
+          height: 70%;
+          width: 86%;
+          top:15%;
+          left:5%;
+          position:relative;
+          overflow:hidden;
+          /*border:1px solid #fff;*/
+      }
+    .middle .center-panel  .list{
+        width: 86%;
+        top:15%;
+        left:5%;
+        position:relative;
+    }
+    .middle .center-panel .hidden{
+        display:none;
+    }
+    .ant-radio-wrapper{ font-size:1.2rem!important; color:#ffffff!important;  }
+    .middle .center-panel  .scroll ul{
+        position:absolute;
+        width: 100%;
+        /*height: 100%;*/
+        -webkit-animation: 8s rowup linear infinite normal;
+        animation: 12s rowup linear infinite normal;
+    }
+    .middle .center-panel .scroll ul:hover {
+        animation-play-state: paused;
+    }
+    @keyframes rowup {
+        0% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(0, -80%, 0);
+            transform: translate3d(0, -80%, 0);
+        }
+    }
+    .slideDown{
+        -webkit-animation: 1s slidedown linear normal;
+        animation: 1s slidedown linear normal;
+        //transform: translate(0,100px);
+        //-ms-transform: translate(0,100px);		/* IE 9 */
+        //-webkit-transform: translate(0,100px);	/* Safari and Chrome */
+        //-o-transform: translate(0,100px);		/* Opera */
+        //-moz-transform: translate(0,100px);
+    }
+    .slideUp{
+        -webkit-animation: 1s slideup linear  normal;
+        animation: 1s slideup linear normal;
+        animation-fill-mode:forwards;
+    }
+    @keyframes slidedown{
+        0%{
+            top:-9%;
+        }
+        100%{
+           top:0;
+        }
+
+    }
+    @keyframes slideup{
+        0%{
+            height:0;
+        }
+        100%{
+            height:-9%;
+            display:none;
+        }
+    }
+}

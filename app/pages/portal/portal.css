@@ -1,0 +1,432 @@
+.portal {
+    width: 100%;
+    height: 100%;
+    background: url('../../images/img/portalBgk.jpg');
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.portal .portalTop {
+    width: 100%;
+    height: 9vh;
+    /*outline: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    background: url('../../images/img/headerBgk.png');
+    background-size: 100% 100%;
+}
+
+.portal .portalTopTittle {
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 0.27rem 1.25rem 0.52rem 1.25rem;
+    font-weight: bold;
+    position: relative;
+    font-family: 'PingFangSC-Semibold', 'PingFang SC Semibold';
+}
+
+.portal .portalTopTittle img {
+    position: absolute;
+    width: 100%;
+    height: 3rem;
+    left: 0;
+    bottom: 0;
+}
+
+.portal .portalMiddle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*outline: 1px solid red;*/
+    width: 40%;
+    padding-bottom: 40%;
+    margin-left: -20%;
+    margin-top: -20%;
+    animation: Rotate 3s ease-in-out 0s 1;
+    animation-fill-mode: forwards; /*动画播放完毕时停止，不回到初始状态*/
+    -webkit-animation-fill-mode: forwards;
+}
+
+.portal .portalMiddle .portalMiddleMain {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.portal .portalMiddle .portalMiddleMain .portalIcon1 {
+    position: absolute;
+    /*top:5%;*/
+    top: 5%;
+    left: 15%;
+    height: 35%;
+    width: 35%;
+    background: url('../../images/img/portalSexangle-1.png');
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portal .portalMiddle .portalMiddleMain .portalIcon2 {
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    height: 35%;
+    width: 35%;
+    background: url('../../images/img/portalSexangle-1.png');
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portal .portalMiddle .portalMiddleMain .portalIcon3 {
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    height: 35%;
+    width: 35%;
+    background: url('../../images/img/portalSexangle-1.png');
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portal .portalMiddle .portalMiddleMain .portalIcon4 {
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+    height: 35%;
+    width: 35%;
+    background: url('../../images/img/portalSexangle-1.png');
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portal .portalMiddle .portalMiddleMain .portalIcon5 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 35%;
+    width: 35%;
+    margin-top: -17.5%;
+    background: url('../../images/img/portalSexangle-1.png');
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portal .portalMiddle .portalMiddleMain .portalIcon6 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: 35%;
+    width: 35%;
+    margin-top: -17.5%;
+    background: url('../../images/img/portalSexangleH.png');
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: OPA 300ms ease-in-out 2.9s 1 alternate forwards;
+    animation-fill-mode: forwards; /*动画播放完毕时停止，不回到初始状态*/
+    -webkit-animation-fill-mode: forwards;
+}
+
+.portalText {
+    /*color: #ffffff;*/
+    font-size: 2rem;
+    font-weight: bold;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*outline: 1px solid red;*/
+    text-align: center;
+    /*display: none;*/
+    width: 66%;
+    color: transparent;
+    animation: show 100ms linear 1s 1 alternate forwards;
+    animation-fill-mode: forwards; /*动画播放完毕时停止，不回到初始状态*/
+    -webkit-animation-fill-mode: forwards;
+}
+
+.shrink {
+    animation: shrink 300ms linear 2.9s 1 alternate forwards;
+    animation-fill-mode: forwards; /*动画播放完毕时停止，不回到初始状态*/
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes show {
+    0% {
+        color: transparent;
+    }
+    100% {
+        color: #ffffff;
+    }
+}
+
+@-webkit-keyframes OPA {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@-webkit-keyframes shrink {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+@-webkit-keyframes Rotate {
+    0% {
+
+        transform: rotate(0);
+        transform: translateX(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -o-transform: rotate(0);
+        -ms-transform: rotate(0);
+    }
+    70% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+    }
+
+    100% {
+        transform: translateX(-60%);
+    }
+}
+
+@-webkit-keyframes Flex {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.portalRightBorder {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 45%;
+    padding-bottom: 40%;
+    margin-top: -20%;
+    /*margin-left: -20%;*/
+    overflow: hidden;
+}
+
+.portalRight {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../images/img/backnew3.png");
+    background-size: 100% 100%;
+    animation: Flex 3s ease-in-out 1.8s 1 alternate forwards;
+    animation-fill-mode: forwards; /*动画播放完毕时停止，不回到初始状态*/
+    -webkit-animation-fill-mode: forwards;
+}
+
+.portalRightMain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*animation: Flex  3s ease-in-out 3500ms 1 alternate forwards;*/
+    /*animation: Flex  3s ease-in-out 0s 1 alternate forwards;*/
+    animation-fill-mode: forwards; /*动画播放完毕时停止，不回到初始状态*/
+    -webkit-animation-fill-mode: forwards;
+}
+.closeWindow{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.portalRightImg {
+    width: 22%;
+    height: 30%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: -11%;
+    overflow: hidden;
+}
+
+.portalRightImg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.portalRightText1 {
+    position: absolute;
+    top: 46%;
+    /*left: 50%;*/
+    width: 100%;
+    height: 8%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.portalRightT {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1.75rem;
+    color: #41ceee;
+    font-weight: bold;
+    z-index: 8;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    animation: slideDown 1s ease-in-out 4.5s 1 alternate forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.portalRightText2 {
+    position: absolute;
+    bottom: 32%;
+    width: 100%;
+    height: 8%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.portalRightButton {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    width: 40%;
+    height: 8%;
+    margin-left: -20%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.portalRightButton button {
+    position: absolute;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background: #169bd5;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    animation: slideDown 1s ease-in-out 5s 1 alternate forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.portalRightIconTL img {
+    position: absolute;
+    /*top: 0;*/
+    top: -10%;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    animation: slideDown 100ms ease-in-out 2.4s 1 alternate forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes showDown {
+    0% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.portalRightIconTR img {
+    position: absolute;
+    top: -10%;
+    /*top: 0;*/
+    right: 0;
+    width: 10%;
+    height: 10%;
+    animation: showDown 100ms ease-in-out 2.4s 1 alternate forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.portalRightIconBL img {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    animation: showDownB 1s ease-in-out 2.4s 1 alternate forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.portalRightIconBR img {
+    position: absolute;
+    top: -10%;
+    right: 0;
+    width: 10%;
+    height: 10%;
+    animation: showDownB 1s ease-in-out 2.4s 1 alternate forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes showDownB {
+    0% {
+        transform: translateY(-10%);
+    }
+    20% {
+        transform: translateY(200%);
+    }
+    30% {
+        transform: translateY(200%);
+    }
+
+    100% {
+        transform: translateY(1000%);
+    }
+}

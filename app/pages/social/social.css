@@ -1,0 +1,219 @@
+#social {
+  padding-bottom:0.1rem;
+  background: #001022;
+  color: #dddddd;
+}
+
+.timeLine-box {
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.content {
+  width: 99%;
+  height: 45vh;
+  margin: 0.5%;
+  margin-top: 0;
+  background-image: url("../../images/social/social.png");
+  background-size: 100% 100%;
+}
+
+.content-title {
+  width: auto;
+  height: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #469ffc;
+}
+/*.dataTables-box1 tbody td:nth-child(6)*/
+.content-cont {
+  width: 100%;
+  height: 88%;
+  display: flex;
+}
+
+.content-cont > div {
+  flex: 1;
+}
+
+.liudongrenkou {
+  margin-bottom: 3.6vw;
+}
+
+.wangbafenxi,
+.lvdianfenxi {
+  display: flex;
+}
+
+.wangbafenxi > div,
+.lvdianfenxi > div {
+  flex: 1;
+}
+
+.wangbafenxi table,
+.lvdianfenxi table,
+.liudongrenkou table {
+  width: 98%;
+  height: 98%;
+  margin: 1% 1%;
+  border-collapse: collapse;
+}
+
+.wangbafenxi table td,
+th,
+.lvdianfenxi table td,
+.liudongrenkou table td {
+  border: 1px solid #0f2d49;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.dataTables-box1 {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.dataTables-box1::-webkit-scrollbar {
+  color: black;
+}
+.dataTables-box1 table {
+  width: 99%;
+  height: auto !important;
+  text-align: center;
+  /*table-layout: fixed;*/
+}
+.dataTables-box1 table thead {
+  width: 100%;
+}
+.dataTables-box1 table tr {
+  /*line-height: 20px;*/
+  height: 2rem;
+  line-height: 2rem !important;
+}
+.dataTables-box1 table thead th {
+  border: 1px solid #0f2d49;
+}
+/*
+.dataTables-box1 th:nth-child(1){
+    width:10%;
+}
+.dataTables-box1 th:nth-child(3){
+    width:12%;
+}
+.dataTables-box1 th:nth-child(5){
+    width:7%;
+}
+.dataTables-box1 th:nth-child(4){
+ width:17%;
+}
+.dataTables-box1 th:nth-child(2){
+ width:24%;
+}
+.dataTables-box1 th:nth-child(6){
+ width:28%;
+}*/
+.dataTables-box1 tbody td:nth-child(1) {
+  width: 10%;
+}
+.dataTables-box1 tbody td:nth-child(3) {
+  width: 12%;
+}
+.dataTables-box1 tbody td:nth-child(5) {
+  width: 7%;
+}
+.dataTables-box1 tbody td:nth-child(4) {
+  width: 17%;
+}
+.dataTables-box1 tbody td:nth-child(2) {
+  width: 10%;
+}
+.dataTables-box1 tbody td:nth-child(6) {
+  width: 15% !important;
+}
+.dataTables-box1 tbody td:nth-child(6) div {
+  width: 100%;
+  line-height: 1rem;
+  height: 1rem;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+.dataTables-box1 tbody td:nth-child(6) div a {
+  color: #fff;
+}
+
+.dataTables-box1 tbody td:nth-child(4) div {
+  width: 100%;
+  line-height: 1rem;
+  height: 1rem;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+.dataTables-box1 tbody td:nth-child(4) div a {
+  color: #fff;
+}
+
+.dataTables-box1 tbody td:nth-child(2) div {
+  width: 100%;
+  line-height: 1rem;
+  height: 1rem;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+.dataTables-box1 tbody td:nth-child(2) div a {
+  color: #fff;
+}
+
+.dataTables-box1 tbody td:nth-child(1) div {
+  width: 100%;
+  line-height: 1rem;
+  height: 1rem;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+.dataTables-box1 tbody td:nth-child(1) div a {
+  color: #fff;
+}
+
+.dataTables-box1 tbody td:nth-child(3) div {
+  width: 100%;
+  line-height: 1rem;
+  height: 1rem;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+
+}
+.dataTables-box1 tbody td:nth-child(3) div a {
+  color: #fff;
+}
+.dataTables-box1 tbody td:nth-child(5) div {
+  width: 100%;
+  line-height: 1rem;
+  height: 1rem;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+.dataTables-box1 tbody td:nth-child(5) div a {
+  color: #fff;
+}
+.dataTables-box1 tbody td:nth-child(7) div a {
+  color: #fff;
+}
+.dataTables-box1 tbody td:nth-child(8) div a {
+  color: #fff;
+}

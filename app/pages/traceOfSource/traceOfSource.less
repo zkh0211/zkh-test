@@ -1,0 +1,204 @@
+@import '../../style/theme.less';
+
+.traceOfSource-contain{
+    width:96%;
+    margin:1rem auto;
+    position: relative;
+ 
+}
+.trace-content-top{
+    width:100%; 
+    padding:1rem;
+    font-size:@font-size-middle;
+    border:@border-base;
+    border-radius:10px;
+    background-color:white;
+}
+.trace-content-top table{ width:93%; border:none; }
+.trace-content-top table tr td{  font-size:@font-size-middle; color:@title-color-base; }
+.trace-content-top table tr td:nth-child(odd){ color:@source-color; }
+// .trace-content-top table tr td:nth-child(even){ width:16%; }
+.trace-content-top table tr td:nth-child(1){ width:6rem; }
+.trace-content-top table tr td:nth-child(4){ width:6rem; }
+.trace-content-top .trace-desc{ width:100%; margin-top:1rem; }
+.trace-content-top .trace-desc p{ width:6rem; float:left; color:@source-color; }
+.trace-content-top .trace-desc .trace-desc-content{ width:94%; float:left; min-height:22vh; border:@source-border; border-radius:6px;  padding:1rem;
+    p{ width:100%; color:@title-color-base; }
+}
+
+
+.trace-content-top .trace-files{ 
+    width:90%; margin-left:8rem; margin-top:1rem; 
+
+    .slick-prev{width:1.5rem; height:1.5rem; top:35%; left:-2rem; background: url("../../images/info/arrow-left.png") no-repeat; background-size: 100% 100%!important;}
+    .slick-next{width:1.5rem; height:1.5rem; top:35%; right:-2rem; background: url("../../images/info/arrow-right.png") no-repeat; background-size: 100% 100%!important;}
+    .slick-prev:hover{background: url("../../images/info/arrow-left.png") no-repeat; background-size: 100% 100%!important;}
+    .slick-next:hover{background: url("../../images/info/arrow-right.png") no-repeat; background-size: 100% 100%!important;}
+  
+}
+
+
+.trace-content-middle{
+    width:100%;
+    padding:1rem;
+    margin-top:1rem;
+    border:@border-base;
+    border-radius:10px;
+    background-color:white;
+    position: relative;
+}
+.trace-content-middle .trace-middle-item{
+    width:12%;
+    height:100%;
+    float:left;
+    position: relative;
+}
+ .trace-item-one{ margin-left:0; }
+ .trace-middle-item>div{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+ .trace-middle-item img{
+    width:5rem;
+    height:5rem;
+}
+ .trace-middle-item p{
+    font-size:@font-size-middle;
+    color:rgb(102, 102, 102);
+    font-weight:700;
+    text-align: center;
+}
+ .trace-middle-item p span{ color:rgb(102, 204, 51);}
+
+.trace-file-margin{ margin-left:1rem!important;}
+.trace-content-bottom{
+    width:100%;
+    margin-top:1rem;
+    position: relative;
+}
+.trace-content-left{
+    width:72%;
+    // min-height:20vh;
+    height:73vh;
+    overflow:scroll;
+    border:@border-base;
+    border-radius:10px;
+    background-color:white;
+    float:left;
+    padding:1rem;
+}
+.trace-news{ 
+    width:100%;
+    font-size:@font-size-base;
+    color:@title-color-base;
+    display: flex;
+}
+.trace-news-time{
+    width:15%;
+    padding:0 1rem;
+}
+.trace-news-desc{
+    width: 84%;
+    border-left: @border-base;
+    position: relative;
+    padding: 0 1rem 3rem 1rem;
+}
+.trace-news-desc>img{
+    position: absolute;
+    top: 0.4rem;
+    left: -0.3rem;
+    width: 0.6rem;
+}
+.trace-news-desc .trace-news-show{
+    position: relative;
+    width:100%;
+}
+.trace-news-desc .trace-news-show>button{
+  border:none; 
+  background:none;
+  color:rgb(51, 153, 255);
+  float:right;
+  margin-right:2rem;
+  font-size:@font-size-base;
+  outline:none;
+  cursor:pointer;
+}
+.trace-news-desc .trace-news-pop{
+    position: absolute;
+    top:80%;
+    right:-2rem;
+    width:25vw;
+    z-index:2;
+    display: none;
+    background-image:url('../../images/common/popBack.png');
+    background-size:100% 100%;
+    padding:3rem;
+    font-size:@font-size-base;
+}
+.trace-news-pop>p:first-child{
+    font-size:@font-size-middle;
+    color:rgb(50, 91, 131);
+    text-align: center;
+}
+.trace-news-pop>p:nth-child(2){
+    margin-bottom:1rem;
+}
+
+
+.trace-news-desc .readTaskShow{ display: block; }
+.trace-news-desc .readTaskHide{ display: none; }
+
+.trace-news-desc>p:nth-child(3){ font-size:@font-size-middle; padding:0.5rem 0 1rem 0; }
+
+
+
+.trace-desc .marBottom{ margin-bottom:1rem; }
+
+.trace-news-desc .news-zdaj-title1{
+    color:rgb(69, 184, 84);
+}
+.trace-news-desc .news-tzhc-title2{
+    color:rgb(46, 183, 253);
+}
+.trace-news-desc .news-tzhc-title3{
+    color:rgb(69, 184, 84);
+}
+
+.trace-content-right{ width:27%; height:73vh; background-color:white; border:@border-base; border-radius:10px; float:right; padding:1rem 0; }
+
+.traceSource-title{
+    padding: 0 1rem;
+    height: 2rem;
+}
+.analysisSeat-talk-pickUp{
+    float: right;
+    border: none;
+    background: none;
+    outLine:none;
+    cursor:pointer;
+}
+/*讨论组*/
+.talk-title{width:100%; height:2rem; padding:0 1rem; }
+.talk-title>p{ color:white; line-height:2rem; font-size:1rem; text-indent:1rem;}
+.nd-title-img{ display:inline-block; width:0.4rem; height:1rem; background-color:#f2f2f2; }
+.nd-title-img b{ display:block; width:100%; height:50%; background-color:#003d79; }
+.talk-content{ width:100%; height:70%; border-top:@border-base; border-bottom:@border-base; position: relative; overflow:auto;}
+.talk-write{ width:100%; height:25%;margin-top:1%; }
+.talk-write-tool{ width:100%; height:15%; }
+.talk-write-tool>img{ height:100%; margin-left:2%; cursor:pointer;}
+.talk-write>textarea{ width:100%; height:100%;  resize:none; font-size:1.125rem; color:rgb(102, 102, 102); border:@border-base; background:none; outline:none; }
+.talkLeft-con{ width:90%; height:auto; padding:2% 2%; float:left; }
+.talkLeft-img{ width:2.5rem; height:2.5rem; background:url('../../images/common/talkRight.jpg') no-repeat; background-size:100% 100%; float:left; }
+.talkLeft-img p{ line-height:2.3rem; font-size:0.875rem; color: rgb(158, 167, 200); text-align:center; }
+.talkLeft-detail{ width:87%; float:right; }
+.talkLeft-detail p{ line-height:1.5rem; font-size:0.875rem; color: rgb(158, 167, 200); word-break:break-all; }
+.talkLeft-detail>div{ border-radius: 4px; width: 100%; background-color: #f3f3f3;  padding:0.5rem;      word-wrap: break-word; }
+.talkRight-con{ width:90%; height:auto; padding:2% 2%; float:right; }
+.talkRight-img{ width:2.5rem; height:2.5rem; background:url('../../images/common/talkLeft.jpg') no-repeat; background-size:100% 100%; float:right; }
+.talkRight-img p{ line-height:2.3rem; font-size:0.875rem; color: rgb(158, 167, 200); text-align:center; }
+.talkRight-detail{ width:87%; float:left; }
+.talkRight-detail>div{ border-radius: 4px; width: 100%; background-color: #daf4fd; padding:0.5rem;     word-wrap: break-word;}
+.talkRight-detail p{ line-height:1.5rem; font-size:0.875rem; text-align: right; color: rgb(158, 167, 200); word-break:break-all; }
+
+

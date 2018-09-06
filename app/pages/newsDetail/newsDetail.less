@@ -1,0 +1,151 @@
+.newsMain {
+  width: 100%;
+  height: 100%;
+  .newsTotals {
+    width: 100%;
+    height: 90%;
+
+    .newsSingle {
+      border-bottom: 1px solid rgb(228, 228, 228);
+      height: 9%;
+      cursor: pointer;
+      .single {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .singleLeft {
+          width: 80%;
+
+          display: flex;
+          align-items: center;
+          padding-left: 1rem;
+          img {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+          }
+          span {
+            margin-left: 1rem;
+            font-size: 1.5rem;
+          }
+        }
+        .singleRight {
+          padding-left: 1rem;
+          font-size: 14px;
+        }
+      }
+      .singleHover {
+        display: none;
+        padding: 1rem 0 1rem 1rem;
+        position: relative;
+
+        .slingeTitle {
+          img {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+          }
+          span {
+            margin-left: 1rem;
+            font-family: "PingFangSC-Regular", "PingFang SC";
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.5rem;
+            color: #4276a9;
+          }
+        }
+        .singleMain {
+          font-size: 1rem;
+          text-indent: 2rem;
+          padding-left: 1rem;
+        }
+        .singleBtn {
+          position: absolute;
+          right: 1rem;
+          //   bottom: 1rem;
+          display: flex;
+          align-items: center;
+          padding: 1px 0 1px 1px;
+
+          border: 1px solid rgba(217, 217, 217, 1);
+          border-radius: 4px;
+
+          button {
+            border: none;
+            outline: none;
+          }
+
+          span {
+            display: inline-block;
+
+            height: 15px;
+            width: 20px;
+            border: none;
+            background: url("../../images/news/arrow.png") no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+      }
+    }
+    .newsSingle:hover {
+      height: 18%;
+      cursor: pointer;
+      .single {
+        display: none;
+      }
+      .singleHover {
+        display: block;
+      }
+    }
+  }
+}
+.article {
+  height: 100%;
+  overflow: auto;
+  position: relative;
+  .title {
+    font-size: 1.5rem;
+    font-family: "PingFangSC-Regular", "PingFang SC";
+    font-weight: 400;
+    font-style: normal;
+
+    color: #325b83;
+  }
+}
+.btn {
+  text-align: center;
+
+  margin-top: 2rem;
+  button {
+    border-width: 0px;
+    cursor: pointer;
+    background: inherit;
+    background-color: inherit;
+    background-color: rgba(44, 86, 127, 1);
+    border: none;
+    border-radius: 5px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: "MicrosoftYaHei", "微软雅黑";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: #ffffff;
+    outline: none;
+  }
+  button:nth-child(2) {
+    margin-left: 5%;
+  }
+  .ant-btn:hover,
+  .ant-btn:focus {
+    color: #40a9ff;
+    background-color: rgba(44, 86, 127, 1);
+    /* background-color: #fff; */
+    border: none;
+    outline: none;
+  }
+}
+.totalPagination {
+  text-align: center;
+}
